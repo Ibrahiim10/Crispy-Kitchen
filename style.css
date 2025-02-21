@@ -101,7 +101,6 @@ body {
     display: flex;
     margin-top: 80px;
     margin-bottom: 80px;
-    /* background-color: #f9f9f9; */
     padding: 128px 0px;
 }
 .team-members h1{
@@ -355,3 +354,79 @@ input{
     margin-top: 0px;
     text-align: start
 }
+
+/* Our Updates */
+.update {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('images/updates.jpg')center/ cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 85vh;
+}
+.update-hero h1{
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+.update-hero p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* our updates */
+.our-updates {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 100px 0px;
+    position: relative;
+}
+.our-updates h1{
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: start
+}
+.updates-menu img{
+    width: 500px;
+    height: auto;
+} 
+.updates-menu {
+    display: flex;
+    position: relative;
+}
+.update-name {
+    position: absolute;
+    bottom: 29px;
+    margin-left: 30px;
+}
+.update-btn {
+    color: #ffffff;
+    background-color: #ed563b;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+.update-name h2{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: start
+}
+
+/* News & Events */
