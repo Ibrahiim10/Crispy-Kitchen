@@ -43,7 +43,7 @@ body {
 .stories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .story-title {
     font-family: "Montserrat", sans-serif;
@@ -99,7 +99,7 @@ body {
 }
 .team-members {
     display: flex;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
     padding: 128px 0px;
 }
@@ -226,7 +226,7 @@ input{
 /* breakfast menu*/
 .menu-foods {
     display: flex;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
     padding: 128px 0px;
 }
@@ -305,7 +305,7 @@ input{
 .lunch-menu {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
     background-color: #ffffff;
     padding: 100px 0px;
@@ -380,7 +380,7 @@ input{
 .our-updates {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
     padding: 100px 0px;
     position: relative;
@@ -430,3 +430,65 @@ input{
 }
 
 /* News & Events */
+.news-event {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 128px 0px;
+    background-color: #fff;
+}
+.news-event h1{
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: start
+}
+.events{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    width: 100%;
+}
+.events img{
+    width: 100%;
+    height: auto;
+} 
+.event-img button {
+    background-color: rgb(13, 202, 240);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-right: 16px;
+    padding: 4px 12px;
+    text-align: start;
+    border: none;
+    border-radius: 5px;
+}
+.event-img h3{
+    display: inline-block;
+    color: rgb(33, 37, 41);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: start
+}
+.event-img h2{
+    color: rgb(33, 37, 41);
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: start;
+    text-decoration-color: rgb(244, 71, 73)
+}
+.event-img h2:hover{
+    color: #f44749;
+    cursor: pointer;
+}
