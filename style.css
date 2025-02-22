@@ -492,3 +492,122 @@ input{
     color: #f44749;
     cursor: pointer;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .story-hero h1 {
+        font-size: 50px;
+    }
+
+    .story-hero p {
+        font-size: 18px;
+    }
+
+    .stories {
+        grid-template-columns: 1fr;
+    }
+
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .news-later img {
+        max-width: 100%;
+    }
+
+    .menu-hero h1, .update-hero h1 {
+        font-size: 50px;
+    }
+
+    .menu-hero p, .update-hero p {
+        font-size: 18px;
+    }
+
+    .menus, .events {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lunch-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lunch img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .our-updates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .updates-menu {
+        flex-direction: column;
+    }
+
+    .update-name {
+        position: static;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-hero h1 {
+        font-size: 40px;
+    }
+
+    .story-hero p {
+        font-size: 16px;
+    }
+
+    .team {
+        grid-template-columns: 1fr;
+    }
+
+    .menus, .events {
+        grid-template-columns: 1fr;
+    }
+
+    .food-name h2 {
+        font-size: 20px;
+    }
+
+    .food-name button {
+        margin-left: 20px;
+    }
+
+    .lunch-menu h1, .our-updates h1, .news-event h1 {
+        font-size: 40px;
+    }
+
+    .updates-menu img{
+        width: 100%;
+    }
+    .updates-menu {
+        display: flex;
+        position: relative;
+    }
+    .update-name {
+        position: absolute;
+        bottom: 20px;
+        margin-left: 20px;
+    }
+    .update-btn{
+        display: inline-block;
+        margin-right: 200px;
+        text-align: start;
+    }
+    
+}
