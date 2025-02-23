@@ -18,13 +18,79 @@ body {
     margin-inline: auto;
     padding: 0 20px;
 }
+/* header */
 
+header {
+    width: 100%;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    width: calc(100%);
+}
+
+.logo span {
+    font-size: 1.62rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.logo span:hover {
+    color: #ff6b31;
+}
+
+.nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #717275;
+}
+
+.nav ul li a:hover {
+    color: #ff6b31;
+    transition: 0.5s;
+}
+
+.nav ul li #home {
+    color: #ff6b31;
+}
+
+.header-nav button {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    background: #dc3545;
+    color: #fff;
+    font-size: 1.12rem;
+}
+
+.header-nav button:hover {
+    background: #c82333;
+    transition: 0.3s;
+}
+.menus-i .fa-bars,
+.menus-i .fa-close {
+    display: none;
+}
+/* style story */
 .story {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('images/coffe-talk.jpg')center/ cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
     height: 85vh;
 }
 
@@ -208,7 +274,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
     height: 85vh;
 }
 
@@ -228,7 +294,7 @@ input{
     display: flex;
     margin-top: 40px;
     margin-bottom: 80px;
-    padding: 128px 0px;
+    padding: 28px 0px;
 }
 .menu-foods h1{
     color: #000000;
@@ -361,7 +427,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
     height: 85vh;
 }
 .update-hero h1{
@@ -494,76 +560,35 @@ input{
 }
 
 /* Responsive Media Queries */
-@media (max-width: 1024px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    .story-hero h1 {
-        font-size: 50px;
-    }
-
-    .story-hero p {
-        font-size: 18px;
-    }
-
-    .stories {
-        grid-template-columns: 1fr;
-    }
-
-    .team {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .news {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .news-later img {
-        max-width: 100%;
-    }
-
-    .menu-hero h1, .update-hero h1 {
-        font-size: 50px;
-    }
-
-    .menu-hero p, .update-hero p {
-        font-size: 18px;
-    }
-
-    .menus, .events {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .lunch-menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .lunch img {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .our-updates {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .updates-menu {
-        flex-direction: column;
-    }
-
-    .update-name {
-        position: static;
-        margin-left: 0;
-        text-align: center;
-    }
-}
 
 @media (max-width: 768px) {
+
+    .nav.mobile {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 1000;
+    }
+
+    .nav.mobile ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .menus-i .fa-bars,
+    .menus-i .fa-close {
+        display: block; /* Show the icons */
+        cursor: pointer; /* Add pointer cursor for better UX */
+    }
+
+    .menus-i .fa-close {
+        display: none; /* Initially hide the close icon */
+    }
+
     .story-hero h1 {
         font-size: 40px;
     }
