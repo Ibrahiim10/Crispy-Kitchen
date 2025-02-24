@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Crispy Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <!-- header -->
+    <div class="header-nav">
+        <div class="menus-i">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="logo">
+            <span>Crispy Kitchen</span>
+        </div>
+        <div class="nav mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./Story.html">Story</a></li>
+                <li><a href="./Menu.html">Menu</a></li>
+                <li><a href="./Our Updates.html">Our Updates</a></li>
+                <li><a id="home"  href="./Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-btn">
+            <button>Reservation</button>
+        </div>
+    </div>
+
+    <!-- contact-hero -->
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-hero">
+                <h1>Say Hi</h1>
+                <p>We are happy to get in touch with you</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact-form -->
+    
+    <section class="lunch-menu">
+        <div class="container">
+            <h1>Leave a message</h1>
+            <div class="contact-form">
+                <form class="form-input" action="#" method="post">
+                    <div class="form-contact">
+                        <div>
+                            <label class="form-label" for="contact-name">Full Name</label>
+                            <input type="text" name="contact-name" id="contact-name" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="contact-phone" class="form-label">Phone Number</label>
+                            <input type="tel" name="contact-phone" id="contact-phone" placeholder="123-456-7890">
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Email</label>
+                        <input type="email" name="contact-email" id="contact-email" placeholder="Your Email" required>
+            
+                        <label for="contact-message" class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Your Message"></textarea>
+                    </div>
+            
+                        <button class="btn" type="submit">SEND</button>
+            
+                </form>
+            
+    
+                <div class="story-des">
+                    <div class="week-title">
+                        <h3>Weekdays</h3>
+                    </div>
+                    
+                    <div class="weekdays">
+                        <p>Monday to <br> Friday</p>
+                        <p>10:00 AM - 08:00 <br>PM</p>
+                    </div>
+                
+                
+                    <div class="week-title">
+                        <h3>Weekends</h3>
+                    </div>
+                    <div class="weekdays">
+                        <p>Saturday to <br> Sunday</p>
+                        <p>11:00 AM - 11:00 <br> PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>121 Einstein Loop N, Bronx, NY 10475, United States</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.4328505269!2d36.72036831147777!3d-1.3021282254454192!2m3!1f0!2f0!3f0!3m2!	1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11655c311541%3A0x9dd769ac1c10b897!2sNairobi%20County!5e0!3m2!1sen!2ske!4v1738006324432!5m2!1sen!2ske" width="100%" height="350"></iframe>
+
+    </section>
+
+        <!-- footer -->
+     
+<footer class="footer">
+    <div class="container">
+            <h2>Crispy Kitchen</h2>
+        <div class="footer-grid">
+            <div class="grid-footer">
+                <h2>Location</h2>
+                <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
+                <button class="footer-btn">Directions</button>
+            </div>
+            <div class="grid-footer">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday</p>
+                <p>10:00 AM - 08:00 PM</p>
+                <p>Tel: <span>010-02-0340</span></p>
+            </div>
+            <div class="grid-footer">
+                <h2>Social</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <p>Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
+                <p>Design: <span>Ibrahim_dev</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+       <!-- scripts -->
+       <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const barsIcon = document.querySelector('.fa-bars');
+        const closeIcon = document.querySelector('.fa-close');
+        const navMenu = document.querySelector('.nav.mobile');
+
+        barsIcon.addEventListener('click', function () {
+            navMenu.style.display = 'block';
+            barsIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', function () {
+            navMenu.style.display = 'none';
+            closeIcon.style.display = 'none';
+            barsIcon.style.display = 'block';
+        });
+        });
+
+    </script>
+</body>
+</html>
