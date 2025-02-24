@@ -135,5 +135,27 @@
         </div>
     </div>
 </footer>
-    </body>
-    </html>
+
+       <!-- scripts -->
+       <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const barsIcon = document.querySelector('.fa-bars');
+        const closeIcon = document.querySelector('.fa-close');
+        const navMenu = document.querySelector('.nav.mobile');
+
+        barsIcon.addEventListener('click', function () {
+            navMenu.style.display = 'block';
+            barsIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', function () {
+            navMenu.style.display = 'none';
+            closeIcon.style.display = 'none';
+            barsIcon.style.display = 'block';
+        });
+        });
+
+    </script>
+</body>
+</html>
