@@ -269,6 +269,114 @@ box-shadow: 2px 5px 67px rgba(0, 0, 0, 0.4);
     align-items: center;
 }
 
+/* grid-products events */
+/* .grid-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   flex-direction: column;
+   margin: auto;
+    
+} */
+.grid-events{
+   margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+/* gap: 10px; */
+}
+.grid-product{
+    position: relative;
+    display: grid;
+    width: calc(100%);
+ padding: 10px;
+ position: relative;
+ background: rgba(0,0,0,0.5),rgba(0,0,0,0.4);
+    
+}
+.grid-product img{
+    width: calc(100%);
+  
+}
+.grid-product1 img{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), 
+    url('./homepageimages/pablo-merchan-montes-Orz90t6o0e4-unsplashgrid1.jpg')center/ cover no-repeat;
+}
+.grid-product2 img{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+}
+.grid-product1{
+   
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+}
+.grid-product2{
+   
+    grid-column: 4 / span 6;
+    grid-row: 1 / span 1;
+}
+.grid-product3{
+    
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.grid-product4{
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+ 
+}
+
+.grid-product5{
+   
+    grid-column: 5 / span 6; 
+   
+   
+} 
+.grid-product .Futured1{
+    position: absolute;
+   bottom: 5%;
+    padding: 30px;
+    color: white;
+}
+.grid-product .Futured1 span{
+    background: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.grid-product .Futured1 p{
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.7rem;
+}
+.grid-product .Futured{
+padding: 20px 0;
+font-weight: bold;
+}
+.grid-product .Futured #prom{
+padding: 5px 10px;
+background: #45D4FF;
+color: white;
+font-weight: 300;
+}
+.grid-product .Futured #n{
+padding: 5px 10px;
+background: black;
+color: white;
+font-weight: 300;
+}
+.grid-product .Futured span, p{
+    padding: 15px 0;
+    border-radius: 5px;
+}
+.grid-product .Futured span{
+    padding: 15px ;
+    border-radius: 5px;
+}
+.grid-product .Futured p{
+    margin-top: 5px;
+   font-size: 1.5rem;
+}
 /* responsive */
 @media (max-width:990px) {
     /* header Responsive */
@@ -352,6 +460,13 @@ box-shadow: 2px 5px 67px rgba(0, 0, 0, 0.4);
     width: 100%;
 }
    
+.grid-events{
+    display: grid;
+    grid-template-columns: repeat(3,1FR);
+    
+}
+
+
 }
 
 @media (max-width:769px){
@@ -359,4 +474,14 @@ box-shadow: 2px 5px 67px rgba(0, 0, 0, 0.4);
         width: calc(100%);
           
     }
+
+.grid-events{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.grid-product{
+    grid-column: 1 span / 6;
+}
+
 }
