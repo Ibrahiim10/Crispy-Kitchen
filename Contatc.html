@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Crispy Kitchen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./images/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact page</title>
 </head>
-<body>
 
-    <section>
-        <!-- header -->
+<body>
     <div class="header-nav">
-        <div class="menus-i">
+        <div class="menus">
             <i class="fa fa-bars"></i>
             <i class="fa fa-close"></i>
         </div>
@@ -21,96 +22,82 @@
         </div>
         <div class="nav mobile">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a id="home" href="">Home</a></li>
                 <li><a href="./Story.html">Story</a></li>
                 <li><a href="./Menu.html">Menu</a></li>
                 <li><a href="./Our Updates.html">Our Updates</a></li>
-                <li><a id="home"href="./Contact.html">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="header-btn">
             <button>Reservation</button>
         </div>
     </div>
-
-    <!-- contact-hero -->
-    </section>
-    <section class="contact">
-        <div class="container">
-            <div class="contact-hero">
-                <h1>Say Hi</h1>
-                <p>We are happy to get in touch with you</p>
-            </div>
+    <div class="contact-bg">
+        <div class="contact-text">
+            <h1>Say Hi</h1>
+            <p>We are happy to get in touch with you</p>
         </div>
-    </section>
+    </div>
+    <div class="conatiner">
 
-
-    <!-- contact-form -->
-    
-    <section class="lunch-menu">
-        <div class="container">
-            <h1>Leave a message</h1>
-            <div class="contact-form">
-                <form class="form-input" action="#" method="post">
-                    <div class="form-contact">
-                        <div>
-                            <label class="form-label" for="contact-name">Full Name</label>
-                            <input type="text" name="contact-name" id="contact-name" placeholder="Your Name" required>
-                        </div>
-                        <div>
-                            <label for="contact-phone" class="form-label">Phone Number</label>
-                            <input type="tel" name="contact-phone" id="contact-phone" placeholder="123-456-7890">
-                        </div>
+        <div class="container-message">
+            <!-- input send message -->
+            <div class="send-maassage">
+                <h1>Leave a message</h1>
+                <form>
+                    <!-- full name input -->
+                   <div class="fullname f">
+                    <label for="">Full Name</label> <br>
+                    <input id="fullname" type="text" placeholder="Full Name">
+                   </div>
+                    <!-- phone number input -->
+                   <div class="number f">
+                    <label for="">Phone Number</label> <br>
+                    <input id="number" type="text" placeholder="+25261xxxxxxx">
+                   </div>
+                    <!-- Email input -->
+                    <div class="email f">
+                        <label for="">Email</label> <br>
+                    <input id="Email" type="text" placeholder="Email">
                     </div>
-            
-                    <div class="form-group">
-                        <label for="contact-email" class="form-label">Email</label>
-                        <input type="email" name="contact-email" id="contact-email" placeholder="Your Email" required>
-            
-                        <label for="contact-message" class="form-label">Message</label>
-                        <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Your Message"></textarea>
-                    </div>
-            
-                        <button class="btn" type="submit">SEND</button>
-            
+                    <!-- Textarea -->
+                    <div class="area f">
+                        <label for="">Message</label> <br>
+                    <textarea  name="" id="" placeholder="You Message"></textarea>
+                    </div> <br>
+                    <button>Send</button>
                 </form>
-            
-    
-                <div class="story-des">
-                    <div class="week-title">
-                        <h3>Weekdays</h3>
+
+            </div>
+            <!-- weekdays avvailable -->
+            <div class="week">
+                <div class="Weekdays">
+                    <span>Weekdays</span>
+                    <div class="weekdays-title">
+                        <p>Monday to Friday</p>
+                        <p id="p">10:00 AM - 08:00 PM</p>
                     </div>
-                    
-                    <div class="weekdays">
-                        <p>Monday to <br> Friday</p>
-                        <p>10:00 AM - 08:00 <br>PM</p>
-                    </div>
-                
-                
-                    <div class="week-title">
-                        <h3>Weekends</h3>
-                    </div>
-                    <div class="weekdays">
-                        <p>Saturday to <br> Sunday</p>
-                        <p>11:00 AM - 11:00 <br> PM</p>
+                </div>
+                <div class="Weekdays Weekends">
+                    <span>Weekends</span>
+                    <div class="weekdays-title">
+                        <p>Saturday and Sunday</p>
+                        <p id="p">11:00 AM - 11:00 PM </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+<div class="map">
+    <span>121 Einstein Loop N, Bronx, NY 10475, United States</span> <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.307345204718!2d45.31150977472625!3d2.0328486979488734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58437e7aa91f3b%3A0x12e8d555da2bcf87!2sBeydan!5e0!3m2!1sen!2sso!4v1740388513370!5m2!1sen!2sso" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    </div>
+  <!-- footer -->
 
-    <section class="container">
-        <h2>121 Einstein Loop N, Bronx, NY 10475, United States</h2>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.4328505269!2d36.72036831147777!3d-1.3021282254454192!2m3!1f0!2f0!3f0!3m2!	1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11655c311541%3A0x9dd769ac1c10b897!2sNairobi%20County!5e0!3m2!1sen!2ske!4v1738006324432!5m2!1sen!2ske" width="100%" height="350"></iframe>
-
-    </section>
-
-        <!-- footer -->
-     
-<footer class="footer">
+  <footer class="footer">
     <div class="container">
-            <h2>Crispy Kitchen</h2>
+        <h2>Crispy Kitchen</h2>
         <div class="footer-grid">
             <div class="grid-footer">
                 <h2>Location</h2>
@@ -135,26 +122,24 @@
         </div>
     </div>
 </footer>
-<!-- scripts -->
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const barsIcon = document.querySelector('.fa-bars');
-    const closeIcon = document.querySelector('.fa-close');
-    const navMenu = document.querySelector('.nav.mobile');
-
-    barsIcon.addEventListener('click', function () {
-        navMenu.style.display = 'block';
-        barsIcon.style.display = 'none';
-        closeIcon.style.display = 'block';
-    });
-
-    closeIcon.addEventListener('click', function () {
-        navMenu.style.display = 'none';
-        closeIcon.style.display = 'none';
-        barsIcon.style.display = 'block';
-    });
-    });
+    let bars = document.querySelector(".fa-bars")
+    let close = document.querySelector(".fa-close")
+    bars.addEventListener("click", () => {
+        let mobile = document.querySelector(".mobile")
+        mobile.style.display = "block"
+        close.style.display = "block"
+        bars.style.display = "none"
+    })
+    close.addEventListener("click", () => {
+        let mobile = document.querySelector(".mobile")
+        mobile.style.display = "none"
+        close.style.display = "none"
+        bars.style.display = "block"
+    })
 
 </script>
+
 </body>
+
 </html>
